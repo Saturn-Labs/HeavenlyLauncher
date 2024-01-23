@@ -1,0 +1,12 @@
+.window-background {
+  background-image: url('../../assets/images/mineimage.jpg');
+  background-color: white;
+  background-clip: content-box; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  image-rendering: optimizeQuality;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}

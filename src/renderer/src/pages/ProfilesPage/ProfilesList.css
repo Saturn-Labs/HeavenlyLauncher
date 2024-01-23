@@ -1,0 +1,114 @@
+.profileslist-base {
+  width: 100%;
+  height: 90%;
+}
+
+.profileslist-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #404142;
+}
+
+.profileslist-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.profileslist-content::-webkit-scrollbar-track {
+  background-color: #454647;
+  border-radius: 5px;
+}
+
+.profileslist-content::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 15px;
+}
+
+.profileslist-item {
+  background-color: #454647;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.profileslist-item:hover {
+  background-color: #3A3B3C;
+}
+
+.profileslist-item-text {
+  width: 100%;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: 'Minecraft-Seven';
+  font-size: 16px;
+  color: white;
+  user-select: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+}
+
+.profileslist-item-description {
+  width: 100%;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: 'Minecraft-Seven';
+  font-size: 14px;
+  color: gray;
+  user-select: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+}
+
+.profileslist-item-buttons {
+  width: fit-content;
+  height: 25px;
+  display: flex;
+  right: 15px;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileslist-item-edit-button {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: 1px solid gray;
+  text-align: center;
+  color: #FFF;
+  user-select: none;
+}
+
+.profileslist-item-remove-button {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: 1px solid gray;
+  text-align: center;
+  color: #FFF;
+  user-select: none;
+}
+
+.profileslist-item-remove-button:hover {
+  background-color: #FF00005F;
+}
+
+.profileslist-item-edit-button:hover {
+  background-color: #0000005F;
+}

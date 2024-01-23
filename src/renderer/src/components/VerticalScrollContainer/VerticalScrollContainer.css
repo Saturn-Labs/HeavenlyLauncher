@@ -1,0 +1,76 @@
+body {
+  --vertical-scrollbar-thumb-percent: 1.0;
+  --vertical-scrollbar-thumb-position: 1.0;
+  --vertical-scrollbar-thumb-margins: 2px;
+  --vertical-scroll-container-width: auto;
+  --vertical-scroll-container-height: 350px;
+  --vertical-scroll-contents-height: 0px;
+  --vertical-scroll-contents-position: 0.0;
+}
+
+.container-items {
+  height: fit-content;
+  background-color: 'blue';
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: var(--vertical-scroll-contents-position);
+}
+
+.vertical-scroll-container {
+  width: var(--vertical-scroll-container-width);
+  height: var(--vertical-scroll-container-height);
+  background-color: #48494A;
+  border: 3px solid black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.vertical-scrollbar-container {
+  width: auto;
+  height: auto;
+  padding-left: 6px;
+  padding-right: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.vertical-scrollbar-trail {
+  width: 5px;
+  height: 100%;
+  background-color: #58585A;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.vertical-scrollbar-thumb-container {
+  min-width: 9px;
+  --vertical-scrollbar-thumb-container-height: calc((100%) * var(--vertical-scrollbar-thumb-percent));
+  height: var(--vertical-scrollbar-thumb-container-height); 
+  border: 3px solid black;
+  position: relative;
+  margin-top: calc(var(--vertical-scrollbar-thumb-margins) / 2);
+  margin-bottom: calc(var(--vertical-scrollbar-thumb-margins) / 2);
+  top: calc(
+    (
+      (
+        (
+          var(--vertical-scroll-container-height) - 
+          var(--vertical-scrollbar-thumb-container-height) - 
+          6px
+        ) - 
+        var(--vertical-scrollbar-thumb-margins)
+      ) * 
+      var(--vertical-scrollbar-thumb-position)
+    )
+  );
+}
+
+.vertical-scrollbar-thumb {
+  height: calc(100% - 5px);
+  background-color: #E6E8EB;
+  box-shadow: 0px 5px #58585A;
+}

@@ -1,0 +1,79 @@
+.side-bar-container {
+  box-shadow: -3px 0px #1E1E1F,
+              +3px 0px #1E1E1F;
+  background-color: #313233;
+  margin-left:  3px;
+  margin-right: 3px;
+  width: fit-content;
+  height: calc(100vh - var(--window-top-main-header-height));
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.side-bar-item {
+  width: 54px;
+  height: 54px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-bar-item:hover {
+  width: 54px;
+  height: 48px;
+  background-color: #48494A;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  box-shadow: 0px -2px #5A5B5C,
+              0px -3px #454647,
+              0px +2px #2B2C2C,
+              0px +3px #1D1E1F;
+}
+
+.side-bar-item-selected {
+  width: 54px;
+  height: 48px;
+  background-color: #48494A;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  box-shadow: 0px -2px #2B2C2C,
+              0px -3px #1D1E1F,
+              0px +2px #5A5B5C,
+              0px +3px #454647;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-bar-item-bedrock-icon {
+  width: 21px;
+  height: 21px;
+  background-image: url('../../assets/images/bedrock-icon.png');
+  background-size: cover;
+  background-clip: content-box;
+  border: 3px solid black;
+  image-rendering: pixelated;
+}
+
+.side-bar-item-launcher-icon {
+  width: 21px;
+  height: 21px;
+  background-image: url('../../assets/images/launcher-logo.png');
+  background-size: cover;
+  background-clip: content-box;
+  border: 3px solid black;
+  image-rendering: pixelated;
+}
+
+.side-bar-item-settings-icon {
+  width: 21px;
+  height: 21px;
+  background-image: url('../../assets/images/launcher-settings.png');
+  background-size: cover;
+  background-clip: content-box;
+  border: 3px solid black;
+  image-rendering: pixelated;
+}

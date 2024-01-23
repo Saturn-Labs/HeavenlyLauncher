@@ -1,0 +1,29 @@
+.bar-container {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.bar-slider {
+  width: calc(100% * 0.5);
+  height: 100%;
+  background-color: #3cb13c;
+  display: flex;
+  align-items: center;
+}
+
+.bar-text {
+  width: '100%';
+  position: absolute;
+  padding-left: 6px;
+  font-family: 'Minecraft-Seven';
+  font-size: 16px;
+  text-align: left;
+  color: #FFF;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,23 @@
+.modal-base {
+  width: 50%;
+  height: fit-content;
+  background-color: #0000007F;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+
+.modal-text {
+  height: 100%;
+  font-family: 'Minecraft-Seven';
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,10 @@
+.modal-bg {
+  background-color: #0000007F;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - var(--window-top-main-header-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}

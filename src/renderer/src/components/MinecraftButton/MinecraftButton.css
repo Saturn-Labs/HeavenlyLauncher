@@ -1,0 +1,60 @@
+body {
+  --button-top-background-color: #646464;
+  --button-top-border-color: #747474;
+  --button-top-hover-color: #4A4A4A;
+  --button-shadow-color: #383838;
+  --text-shadow-color: #494949;
+  --text-font-family: 'Minecraft-Seven';
+  --text-font-size: 16px;
+}
+
+.minecraft-button-container {
+  width: 409px;
+  height: 61px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.minecraft-button {
+  border: 3px solid #1E1E1F;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+}
+
+.minecraft-button-top { 
+  background-color: var(--button-top-background-color);
+  border: 3px solid var(--button-top-border-color);
+  height: calc(100% - 5px);
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  display: flex;
+  font-family: var(--text-font-family);
+  image-rendering: pixelated;
+  color: #FFF;
+  letter-spacing: .1px;
+  font-size: var(--text-font-size);
+  text-shadow: 1.5px 1.5px 1px var(--text-shadow-color);
+  user-select: none;
+  box-shadow: 0px 5px var(--button-shadow-color);
+  margin-bottom: 5px;
+}
+
+.minecraft-button:hover .minecraft-button-top {
+  background-color: var(--button-top-hover-color);
+}
+
+.minecraft-button:active {
+  height: calc(100% - 11px);
+}
+
+.minecraft-button:active .minecraft-button-top {
+  height: calc(100%);
+  box-shadow: 0px 0px var(--button-shadow-color);
+  margin-bottom: 0px;
+}

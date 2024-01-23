@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Minecraft-Ten';
+  src: url('./fonts/Minecraft-Ten.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Minecraft-Seven';
+  src: url('./fonts/Minecraft-Seven.otf') format('opentype');
+}
+
+:root {
+  --window-title-custom-buttons-total-width: 123px;
+  --window-top-main-header-height: 48px;
+  --window-bottom-section-height: 70px;
+}

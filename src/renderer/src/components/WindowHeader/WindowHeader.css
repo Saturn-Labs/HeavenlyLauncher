@@ -1,0 +1,32 @@
+:root {
+    --header-height: var(--window-top-main-header-height);
+    --header-color: #E6E8EB;
+    --header-shadow-color: #B1B2B5;
+    --header-bottom-line-color: #151516;
+    --header-shadown-height: 6px;
+    --header-bottom-line-height: 3px;
+    --header-true-height: calc(var(--header-height) - var(--header-shadown-height) - var(--header-bottom-line-height));
+}
+
+.header {
+    height: var(--header-true-height);
+    background-color: var(--header-color);
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    display: flex;
+    box-shadow: 0px calc(var(--header-shadown-height)) var(--header-shadow-color),
+        0px calc(var(--header-shadown-height) + var(--header-bottom-line-height)) var(--header-bottom-line-color);
+    margin-bottom: calc(var(--header-shadown-height) + var(--header-bottom-line-height));
+}
+
+.window-title {
+    width: auto;
+    height: auto;
+    font-family: "Minecraft-Ten";
+    letter-spacing: .1px;
+    font-size: 18px;
+    image-rendering: pixelated;
+    user-select: none;
+    position: relative;
+}
